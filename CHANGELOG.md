@@ -100,4 +100,4 @@ v0 in semver parlance.
 
   [Keep a Changelog]: http://keepachangelog.com/
   [Semantic Versioning]: http://semver.org/
-  [2.8 and earlier]: https://github.com/binaryphile/bashblog/commit/b5a459022d4c592b137be728df03b827655a49dc
+  [2.8 and earlier]: https://github.com/binaryphile/bashblog/tree/v2.8
