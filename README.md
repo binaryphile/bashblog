@@ -109,8 +109,8 @@ Detailed features
 -   A simple but nice and readable design, with nothing but the blog
     posts
 
--   **NEW on 2.0** Markdown support via a third-party library.
-    The easiest method is to download Gruber's [Markdown.pl]
+-   **NEW on 2.0** Markdown support via a third-party library. The
+    easiest method is to download Gruber's [Markdown.pl]
 
 -   Post preview
 
@@ -179,7 +179,6 @@ should:
     configuration
 
   [read the initial blog post]: https://web.archive.org/web/20130520204024/http://mmb.pcb.ub.es/~carlesfe/blog/creating-a-simple-blog-system-with-a-500-line-bash-script.html
-  [demo]: https://raw.githubusercontent.com/cfenollosa/bashblog/gh-pages/images/demo_thumb.png
   [other bashblog users]: https://www.google.com/search?q=%22Generated+with+bashblog,+a+single+bash+script+to+easily+create+blogs+like+this+one%22
   [Markdown.pl]: http://daringfireball.net/projects/markdown/
   [EU cookie law]: https://github.com/cfenollosa/eu-cookie-law
