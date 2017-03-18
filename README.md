@@ -66,7 +66,7 @@ Features
     RSS file automatically.
 
 -   Support for tags/categories
--
+
 -   Support for Markdown, Disqus comments, Twitter, Feedburner,
     Google Analytics.
 
