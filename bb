@@ -9,7 +9,7 @@
 # It is recommended to perform a 'rebuild' after changing any of this in the code
 
 # Config file. Any settings "key=value" written there will override the
-# global_variables defaults. Useful to avoid editing bb.sh and having to deal
+# global_variables defaults. Useful to avoid editing bb and having to deal
 # with merges in VCS
 global_config=".config"
 
@@ -281,7 +281,7 @@ get_html_file_content() {
 #	"full" to edit full HTML, and not only text part (keeps old filename)
 #	leave empty for default behavior (edit only text part and change name)
 edit() {
-    [[ ! -f "${1%%.*}.html" ]] && echo "Can't edit post "${1%%.*}.html", did you mean to use \"bb.sh post <draft_file>\"?" && exit -1
+    [[ ! -f "${1%%.*}.html" ]] && echo "Can't edit post "${1%%.*}.html", did you mean to use \"bb post <draft_file>\"?" && exit -1
     # Original post timestamp
     edit_timestamp=$(LC_ALL=C date -r "${1%%.*}.html" +"$date_format_full" )
     touch_timestamp=$(LC_ALL=C date -r "${1%%.*}.html" +"$date_format_timestamp")
@@ -559,7 +559,7 @@ write_entry() {
         # guess format from TMPFILE
         extension=${TMPFILE##*.}
         [[ $extension == md || $extension == html ]] && fmt=$extension
-        # but let user override it (`bb.sh post -html file.md`)
+        # but let user override it (`bb post -html file.md`)
         [[ $2 == -html ]] && fmt=html
         # Test if Markdown is working before re-posting a .md file
         if [[ $extension == md ]]; then
@@ -848,7 +848,7 @@ list_tags() {
     if [[ $2 == -n ]]; then do_sort=1; else do_sort=0; fi
 
     ls ./$prefix_tags*.html &> /dev/null
-    (($? != 0)) && echo "No posts yet. Use 'bb.sh post' to create one" && return
+    (($? != 0)) && echo "No posts yet. Use 'bb post' to create one" && return
 
     lines=""
     for i in $prefix_tags*.html; do
@@ -871,7 +871,7 @@ list_tags() {
 # Displays a list of the posts
 list_posts() {
     ls ./*.html &> /dev/null
-    (($? != 0)) && echo "No posts yet. Use 'bb.sh post' to create one" && return
+    (($? != 0)) && echo "No posts yet. Use 'bb post' to create one" && return
 
     lines=""
     n=1

@@ -7,7 +7,7 @@ I created it because I wanted a very, very simple way to post entries to
 a blog by using a public folder on my server, without any special
 requirements and dependencies. Works on GNU/Linux, OSX and BSD.
 
-*How simple? Just type `./bb.sh post` and start writing your blogpost.*
+*How simple? Just type `./bb post` and start writing your blogpost.*
 
 You can see a sample here: [read the initial blog post]. That page was
 100% generated using bashblog, no additional tweaking.
@@ -17,13 +17,13 @@ Check out [other bashblog users]
 Usage
 -----
 
-Download the code and copy bb.sh into a public folder (for example,
+Download the code and copy bb into a public folder (for example,
 `$HOME/public_html/blog`) and run
 
-    ./bb.sh
+    ./bb
 
 This will show the available commands. If the file is not executable,
-type `chmod +x bb.sh` and retry.
+type `chmod +x bb` and retry.
 
 **Before creating your first post, you may want to configure the blog
 settings (title, author, etc). Read the Configuration section below for
@@ -31,11 +31,11 @@ more information**
 
 To create your first post, just run:
 
-    ./bb.sh post
+    ./bb post
 
 It will try to use Markdown, if installed. To force HTML:
 
-    ./bb.sh post -html
+    ./bb post -html
 
 The script will handle the rest.
 
@@ -49,7 +49,7 @@ Features
 -   Ultra simple usage: Just type a post with your favorite editor and
     the script does the rest. No templating.
 
--   No installation required. Download `bb.sh` and start blogging.
+-   No installation required. Download `bb` and start blogging.
 
 -   Zero dependencies. It runs just on base utils (`date`, `basename`,
     `grep`, `sed`, `head`, etc)
@@ -85,7 +85,7 @@ titles, author names, etc, to match your own.
 
 There are two ways to configure the blog strings:
 
--   Edit `bb.sh` and modify the variables in the `global_variables()`
+-   Edit `bb` and modify the variables in the `global_variables()`
     function
 -   Create a `.config` file with your configuration values -- useful if
     you don't want to touch the script and be able to update it

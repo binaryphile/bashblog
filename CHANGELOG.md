@@ -5,6 +5,19 @@ The format is based on [Keep a Changelog] and this project adheres to
 [Semantic Versioning], with the minor exception that v10 is considered
 v0 in semver parlance.
 
+[Unreleased]
+------------
+
+### Added
+
+-   [shpec] tests
+
+### Changed
+
+-   separated README, LICENSE and CHANGELOG
+
+-   renamed `bb.sh` to `bb`
+
 [2.8 and earlier] - 2016-10-24
 ------------------------------
 
@@ -100,4 +113,6 @@ v0 in semver parlance.
 
   [Keep a Changelog]: http://keepachangelog.com/
   [Semantic Versioning]: http://semver.org/
+  [Unreleased]: https://github.com/binaryphile/bashblog/compare/v2.8...v10.10
+  [shpec]: https://github.com/rylnd/shpec
   [2.8 and earlier]: https://github.com/binaryphile/bashblog/tree/v2.8
