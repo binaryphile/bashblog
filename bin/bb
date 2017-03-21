@@ -1181,6 +1181,7 @@ do_main() {
     delete_includes
 }
 
+return 0 2>/dev/null ||:
 
 #
 # MAIN
